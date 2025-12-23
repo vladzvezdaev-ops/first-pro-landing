@@ -1,0 +1,19 @@
+@use "../utils/variables" as variables;
+
+.image-section {
+  background-color: variables.$primary-color;
+  position: relative;
+  z-index: 1;
+
+  &__image {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 1024px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    z-index: 2;
+  }
+}

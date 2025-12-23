@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+$primary-color: #333cb1;
+$primary-color-light: #eeefff;
+$secondary-color: #d3f080;
+$secondary-color-green: #1d764c;
+$secondary-color-orange: #fd7b44;
+
+// Fonts
+
+$font-primary: "Montserrat", "roboto";
+$font-secondary: "Unbounded", "impact";
+$font-tertiary: "caveat", "segoe script";
+
+// Other
+
+$sprite-path: "../image/symbol-defs.svg";
