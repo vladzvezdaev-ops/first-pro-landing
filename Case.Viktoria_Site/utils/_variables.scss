@@ -13,7 +13,8 @@ h4,
 h5,
 h6,
 ul,
-ol {
+ol,
+div {
   margin: 0;
   padding: 0;
 }
@@ -26,9 +27,9 @@ $secondary-color-orange: #fd7b44;
 
 // Fonts
 
-$font-primary: "Montserrat", "roboto";
+$font-primary: "TT Firs Neue", "roboto";
 $font-secondary: "Unbounded", "impact";
-$font-tertiary: "caveat", "segoe script";
+$font-tertiary: "Caveat", "segoe script";
 
 // Other
 

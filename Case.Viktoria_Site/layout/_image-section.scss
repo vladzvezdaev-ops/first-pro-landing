@@ -15,5 +15,9 @@
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     z-index: 2;
+
+    @media (min-width: 845px) {
+      border-radius: 0;
+    }
   }
 }

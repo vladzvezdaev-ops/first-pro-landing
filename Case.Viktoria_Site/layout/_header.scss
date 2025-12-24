@@ -13,6 +13,10 @@
   border-bottom: 1px solid black;
   z-index: 2;
 
+  &__nav {
+    display: none;
+  }
+
   &__burger-menu {
     width: 32px;
     height: 32px;
@@ -34,11 +38,41 @@
     cursor: pointer;
 
     p {
+      font-family: variables.$font-secondary;
       font-weight: 700;
-      font-size: 19px;
+      font-size: 14px;
       line-height: 100%;
       width: 184px;
-      height: 14px;
+      height: 6px;
+    }
+  }
+
+  @media (min-width: 845px) {
+    padding: 15px 80px;
+    gap: 40px;
+
+    &__burger-menu {
+      display: none;
+    }
+
+    &__nav {
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+
+        li {
+          font-family: variables.$font-primary;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 100%;
+          white-space: nowrap;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
