@@ -18,17 +18,22 @@
   padding-left: 15px;
   background-color: variables.$primary-color;
   width: 100%;
-  height: 465px;
+  height: auto;
 
-  @media (min-width: 845px) {
+  @media (min-width: 1120px) {
     height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-top: 0;
+    justify-content: center;
   }
 
   &__brokoli {
     content: "";
     position: absolute;
-    width: 55px;
-    height: 70px;
+    width: 65px;
+    height: 80px;
     right: 0;
     top: 10px;
     fill: variables.$secondary-color;
@@ -37,50 +42,57 @@
       right: 20px;
     }
 
-    @media (min-width: 1120px) {
-      position: absolute;
-      right: 55px;
-      top: 450px;
-      width: 100px;
-      height: 100px;
-      transform: rotate(25deg);
+    @media (min-width: 1350px) {
+      display: none;
     }
   }
 
   &__avocado {
     content: "";
     position: absolute;
-    width: 55px;
-    height: 70px;
+    width: 70px;
+    height: 80px;
     left: 20px;
     top: -15px;
     fill: variables.$secondary-color;
     z-index: 1;
 
-    @media (min-width: 845px) {
-      top: 15px;
+    @media (min-width: 1350px) {
+      top: 40px;
+      left: 50px;
+      width: 80px;
+      height: 95px;
     }
   }
 
   &__brokoli-down {
     content: "";
     position: absolute;
-    width: 55px;
-    height: 70px;
-    left: 33px;
-    bottom: -15px;
+    width: 70px;
+    height: 80px;
+    left: 50px;
+    bottom: -8px;
     fill: variables.$secondary-color;
     z-index: 1;
     transform: scaleX(-1) rotate(20deg);
+
+    @media (min-width: 1350px) {
+      left: auto;
+      right: 70px;
+      bottom: 120px;
+      width: 100px;
+      height: 100px;
+      transform: scaleZ(-1) rotate(25deg);
+    }
   }
 
   &__wok {
     content: "";
     position: absolute;
-    width: 95px;
-    height: 90px;
-    bottom: -25px;
-    right: 15px;
+    width: 100px;
+    height: 100px;
+    bottom: -20px;
+    right: 30px;
     fill: variables.$secondary-color;
     z-index: 1;
 
@@ -88,7 +100,7 @@
       bottom: 90px;
     }
 
-    @media (min-width: 1120px) {
+    @media (min-width: 1350px) {
       transform: rotate(25deg);
       top: 70px;
       right: 90px;
@@ -111,6 +123,11 @@
     border: none;
     white-space: nowrap;
     cursor: pointer;
+
+    @media (min-width: 1120px) {
+      margin-top: 60px;
+      order: 2;
+    }
 
     &:hover {
       margin-top: 40px;
@@ -147,6 +164,10 @@
     font-weight: 500;
     font-size: 16px;
     font-family: variables.$font-primary;
+
+    @media (min-width: 845px) {
+      order: 1;
+    }
   }
 
   &__text {
@@ -155,11 +176,21 @@
     line-height: 100%;
     font-weight: 500;
     font-family: variables.$font-primary;
+
+    &:first-of-type {
+      @media (min-width: 1024px) {
+        margin-top: 12px;
+      }
+    }
   }
 
   &__text:last-of-type {
     opacity: 0.6;
     font-family: variables.$font-primary;
+
+    @media (min-width: 1024px) {
+      order: 1;
+    }
   }
 
   &__title {
@@ -172,6 +203,11 @@
     line-height: 100%;
     letter-spacing: 0%;
     max-width: 345px;
+
+    @media (min-width: 1024px) {
+      font-size: 52px;
+      max-width: 530px;
+    }
   }
 }
 
@@ -180,7 +216,7 @@
   color: variables.$secondary-color;
   display: none;
 
-  @media (min-width: 1120px) {
+  @media (min-width: 1350px) {
     display: block;
     position: absolute;
     top: 45px;
@@ -192,7 +228,7 @@
 .milk {
   display: none;
 
-  @media (min-width: 1120px) {
+  @media (min-width: 1200px) {
     display: block;
     position: absolute;
   }
@@ -202,16 +238,16 @@
     width: 100px;
     height: 100px;
     fill: variables.$secondary-color;
-    top: 80px;
-    left: 70px;
+    top: 230px;
+    left: 60px;
   }
 
   &__text {
     font-family: variables.$font-tertiary;
     color: variables.$secondary-color;
     position: absolute;
-    top: 25px;
-    left: 20px;
+    top: 200px;
+    left: 0;
     font-weight: 700;
     transform: rotate(-25deg);
   }

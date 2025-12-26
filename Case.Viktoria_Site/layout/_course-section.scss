@@ -1,0 +1,280 @@
+@use "../utils/variables" as variables;
+
+.course-section {
+  position: relative;
+  background-color: variables.$primary-color;
+  margin-top: -50px;
+  padding: 150px 15px 100px 15px;
+
+  &__title-svg-left {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    width: 80px;
+    height: 60px;
+    fill: none;
+    color: variables.$secondary-color;
+    display: inline-block;
+  }
+
+  &__title-svg-right {
+    position: absolute;
+    right: -15px;
+    top: -45px;
+    width: 75px;
+    height: 75px;
+    fill: none;
+    color: variables.$secondary-color;
+    stroke: variables.$secondary-color;
+    display: inline-block;
+  }
+
+  &__title {
+    position: relative;
+    font-family: variables.$font-secondary;
+    font-weight: 400;
+    font-size: 36px;
+    color: variables.$primary-color-light;
+    max-width: 310px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__title-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title-text {
+    text-align: center;
+    margin-top: 20px;
+    font-family: variables.$font-primary;
+    font-weight: 500;
+    font-size: 20px;
+    color: variables.$primary-color-light;
+    opacity: 0.6;
+    max-width: 280px;
+  }
+
+  &__title-number {
+    font-family: variables.$font-tertiary;
+    color: variables.$secondary-color;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+
+    &:first-child {
+      margin-top: 40px;
+    }
+  }
+
+  &__button-bottom {
+    display: block;
+    border-radius: 100px;
+    padding: 16px 32px;
+    background-color: variables.$secondary-color;
+    color: variables.$primary-color;
+    font-weight: 600;
+    font-family: variables.$font-secondary;
+    font-size: 14px;
+    margin: 0 auto;
+    max-width: 300px;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+      margin-top: 24px;
+      padding: 16px 32px;
+      border-radius: 100px;
+      max-width: 300px;
+      font-weight: 600;
+      background-color: variables.$primary-color;
+      border: 1px solid variables.$secondary-color;
+      color: variables.$secondary-color;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+  }
+
+  &__bottom-title {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    color: variables.$primary-color-light;
+    margin-top: 100px;
+    font-family: variables.$font-secondary;
+    font-weight: 400;
+    font-size: 36px;
+    max-width: 345px;
+  }
+
+  &__title-svg-title {
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    transform: rotate(-175deg);
+    width: 75px;
+    height: 75px;
+    fill: none;
+    color: variables.$secondary-color;
+    stroke: variables.$secondary-color;
+    display: inline-block;
+  }
+
+  &__course-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: variables.$primary-color;
+    font-family: variables.$font-primary;
+    font-size: 18px;
+    font-weight: 500;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+
+    &-li {
+      background-color: variables.$primary-color-light;
+      border-radius: 16px;
+      min-height: 130px;
+      padding: 32px;
+
+      &:last-child {
+        display: none;
+      }
+
+      &:nth-last-child(2) {
+        display: none;
+      }
+    }
+
+    &-CheckCircle {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+    }
+
+    &-text {
+      max-width: 280px;
+      margin-top: 24px;
+    }
+  }
+}
+
+.course-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 32px;
+  background-color: variables.$secondary-color;
+  padding: 34px 24px 0 24px;
+  margin-top: 100px;
+  height: 1000px;
+  overflow: hidden;
+
+  &__title {
+    margin: 0 auto;
+    font-family: variables.$font-secondary;
+    font-weight: 400;
+    font-size: 36px;
+    color: variables.$primary-color;
+    max-width: 290px;
+    z-index: 3;
+  }
+
+  &__button {
+    border-radius: 100px;
+    padding: 16px 32px;
+    background-color: variables.$primary-color;
+    color: variables.$primary-color-light;
+    font-weight: 600;
+    font-family: variables.$font-secondary;
+    font-size: 14px;
+    margin-top: 24px;
+    max-width: 300px;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+      margin-top: 24px;
+      padding: 16px 32px;
+      border-radius: 100px;
+      max-width: 300px;
+      font-weight: 600;
+      color: variables.$secondary-color;
+      border: none;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+  }
+
+  &__text {
+    font-family: variables.$font-primary;
+    font-weight: 500;
+    font-size: 16px;
+    color: variables.$primary-color;
+    max-width: 300px;
+    margin-top: 16px;
+  }
+
+  &__man-text {
+    position: absolute;
+    font-family: variables.$font-tertiary;
+    color: variables.$primary-color;
+    font-size: 16px;
+    font-weight: 700;
+    max-width: 100px;
+    text-align: center;
+    bottom: -130px;
+    left: 100px;
+    transform: rotate(-20deg);
+  }
+
+  &__img {
+    position: absolute;
+    width: 450px;
+    height: 500px;
+    right: -230px;
+    bottom: -575px;
+  }
+
+  &__left-capusta {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    fill: variables.$primary-color;
+    right: 50px;
+    bottom: -270px;
+  }
+
+  &__right-capusta {
+    position: absolute;
+    fill: variables.$primary-color;
+    width: 200px;
+    height: 140px;
+    bottom: -250px;
+    left: 30px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__redline {
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    height: 50px;
+    color: #fd7b44;
+    fill: none;
+    top: 164px;
+  }
+}
