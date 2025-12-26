@@ -1,0 +1,119 @@
+@use "../utils/variables" as variables;
+
+.results-section {
+  position: relative;
+  background-color: variables.$primary-color-light;
+  padding: 35px 15px;
+  border-radius: 32px;
+  margin-top: -30px;
+  z-index: 3;
+
+  @media (min-width: 1120px) {
+    padding: 60px 80px;
+  }
+
+  &__container {
+    background-color: variables.$secondary-color-green;
+    border-radius: 24px;
+    padding: 35px 25px;
+
+    @media (min-width: 1120px) {
+      padding: 60px;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0 auto;
+    text-align: start;
+    font-family: variables.$font-secondary;
+    font-weight: 400;
+    font-size: 36px;
+    color: variables.$primary-color-light;
+    max-width: 300px;
+
+    @media (min-width: 1120px) {
+      font-size: 52px;
+      width: 630px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+    list-style: none;
+
+    @media (min-width: 1120px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: variables.$primary-color-light;
+    border-radius: 16px;
+    padding: 32px;
+    gap: 32px;
+
+    @media (min-width: 1120px) {
+      padding: 40px 40px 56px 40px;
+      max-height: 200px;
+    }
+
+    &:last-of-type {
+      background-color: variables.$secondary-color;
+
+      @media (min-width: 1120px) {
+        padding: 40px 40px 56px 40px;
+      }
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    padding: 32px;
+    background-color: variables.$secondary-color;
+    color: variables.$secondary-color-green;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: variables.$font-secondary;
+    border-radius: 100px;
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: 1120px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: variables.$secondary-color;
+      border: 1px solid variables.$secondary-color;
+    }
+  }
+
+  &__number {
+    font-family: variables.$font-tertiary;
+    color: variables.$secondary-color-green;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__text {
+    color: variables.$secondary-color-green;
+    font-family: variables.$font-primary;
+    max-width: 230px;
+    font-weight: 500;
+    font-size: 16px;
+  }
+}

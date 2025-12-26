@@ -6,6 +6,26 @@
   margin-top: -50px;
   padding: 150px 15px 100px 15px;
 
+  @media (min-width: 1120px) {
+    padding: 150px 70px 150px 70px;
+  }
+
+  &__title {
+    position: relative;
+    font-family: variables.$font-secondary;
+    font-weight: 400;
+    font-size: 36px;
+    color: variables.$primary-color-light;
+    max-width: 310px;
+    text-align: center;
+    margin: 0 auto;
+
+    @media (min-width: 1120px) {
+      max-width: 870px;
+      font-size: 52px;
+    }
+  }
+
   &__title-svg-left {
     position: absolute;
     top: -35px;
@@ -15,6 +35,13 @@
     fill: none;
     color: variables.$secondary-color;
     display: inline-block;
+
+    @media (min-width: 1120px) {
+      width: 120px;
+      height: 120px;
+      left: -10px;
+      top: -80px;
+    }
   }
 
   &__title-svg-right {
@@ -27,17 +54,13 @@
     color: variables.$secondary-color;
     stroke: variables.$secondary-color;
     display: inline-block;
-  }
 
-  &__title {
-    position: relative;
-    font-family: variables.$font-secondary;
-    font-weight: 400;
-    font-size: 36px;
-    color: variables.$primary-color-light;
-    max-width: 310px;
-    text-align: center;
-    margin: 0 auto;
+    @media (min-width: 1120px) {
+      width: 120px;
+      height: 120px;
+      right: 40px;
+      top: -70px;
+    }
   }
 
   &__title-list {
@@ -47,6 +70,10 @@
     list-style: none;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 1120px) {
+      flex-direction: row;
+    }
   }
 
   &__title-text {
@@ -58,6 +85,10 @@
     color: variables.$primary-color-light;
     opacity: 0.6;
     max-width: 280px;
+
+    @media (min-width: 1120px) {
+      max-width: 240px;
+    }
   }
 
   &__title-number {
@@ -111,6 +142,11 @@
     font-weight: 400;
     font-size: 36px;
     max-width: 345px;
+
+    @media (min-width: 1120px) {
+      font-size: 52px;
+      max-width: 870px;
+    }
   }
 
   &__title-svg-title {
@@ -124,6 +160,14 @@
     color: variables.$secondary-color;
     stroke: variables.$secondary-color;
     display: inline-block;
+
+    @media (min-width: 1120px) {
+      transform: scaleX(-1);
+      top: -70px;
+      left: -20px;
+      width: 90px;
+      height: 90px;
+    }
   }
 
   &__course-list {
@@ -138,6 +182,12 @@
     margin-top: 40px;
     margin-bottom: 24px;
 
+    @media (min-width: 1120px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 40px;
+    }
+
     &-li {
       background-color: variables.$primary-color-light;
       border-radius: 16px;
@@ -146,10 +196,18 @@
 
       &:last-child {
         display: none;
+
+        @media (min-width: 1120px) {
+          display: block;
+        }
       }
 
       &:nth-last-child(2) {
         display: none;
+
+        @media (min-width: 1120px) {
+          display: block;
+        }
       }
     }
 
@@ -179,14 +237,26 @@
   height: 1000px;
   overflow: hidden;
 
+  @media (min-width: 1120px) {
+    max-width: 1280px;
+    max-height: 540px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 60px;
+  }
+
   &__title {
-    margin: 0 auto;
     font-family: variables.$font-secondary;
     font-weight: 400;
     font-size: 36px;
     color: variables.$primary-color;
     max-width: 290px;
     z-index: 3;
+
+    @media (min-width: 1120px) {
+      max-width: 690px;
+      font-size: 48px;
+    }
   }
 
   &__button {
@@ -202,6 +272,10 @@
     white-space: nowrap;
     cursor: pointer;
     border: none;
+
+    @media (min-width: 1120px) {
+      margin-top: 40px;
+    }
 
     &:hover {
       margin-top: 24px;
@@ -223,6 +297,10 @@
     color: variables.$primary-color;
     max-width: 300px;
     margin-top: 16px;
+
+    @media (min-width: 1120px) {
+      margin-top: 32px;
+    }
   }
 
   &__man-text {
@@ -236,6 +314,14 @@
     bottom: -130px;
     left: 100px;
     transform: rotate(-20deg);
+
+    @media (min-width: 1120px) {
+      top: -410px;
+      right: auto;
+      left: 820px;
+      transform: scaleZ(-1);
+      transform: rotate(10deg);
+    }
   }
 
   &__img {
@@ -244,6 +330,11 @@
     height: 500px;
     right: -230px;
     bottom: -575px;
+
+    @media (min-width: 1120px) {
+      top: -370px;
+      right: -1000px;
+    }
   }
 
   &__left-capusta {
@@ -253,6 +344,11 @@
     fill: variables.$primary-color;
     right: 50px;
     bottom: -270px;
+
+    @media (min-width: 1120px) {
+      top: -170px;
+      right: -640px;
+    }
   }
 
   &__right-capusta {
@@ -262,6 +358,12 @@
     height: 140px;
     bottom: -250px;
     left: 30px;
+
+    @media (min-width: 1120px) {
+      top: -360px;
+      right: auto;
+      left: 800px;
+    }
   }
 
   &__container {
@@ -276,5 +378,12 @@
     color: #fd7b44;
     fill: none;
     top: 164px;
+
+    @media (min-width: 1120px) {
+      top: 168px;
+      left: 20px;
+      width: 430px;
+      height: 75px;
+    }
   }
 }
