@@ -28,10 +28,10 @@
 
   &__title-svg-left {
     position: absolute;
-    top: -35px;
-    left: -35px;
-    width: 80px;
-    height: 60px;
+    top: -60px;
+    left: -55px;
+    width: 90px;
+    height: 90px;
     fill: none;
     color: variables.$secondary-color;
     display: inline-block;
@@ -100,35 +100,6 @@
 
     &:first-child {
       margin-top: 40px;
-    }
-  }
-
-  &__button-bottom {
-    display: block;
-    border-radius: 100px;
-    padding: 16px 32px;
-    background-color: variables.$secondary-color;
-    color: variables.$primary-color;
-    font-weight: 600;
-    font-family: variables.$font-secondary;
-    font-size: 14px;
-    margin: 0 auto;
-    max-width: 300px;
-    white-space: nowrap;
-    cursor: pointer;
-    border: none;
-
-    &:hover {
-      margin-top: 24px;
-      padding: 16px 32px;
-      border-radius: 100px;
-      max-width: 300px;
-      font-weight: 600;
-      background-color: variables.$primary-color;
-      border: 1px solid variables.$secondary-color;
-      color: variables.$secondary-color;
-      white-space: nowrap;
-      cursor: pointer;
     }
   }
 
@@ -218,7 +189,7 @@
     }
 
     &-text {
-      max-width: 280px;
+      max-width: 247px;
       margin-top: 24px;
     }
   }
@@ -309,11 +280,12 @@
     color: variables.$primary-color;
     font-size: 16px;
     font-weight: 700;
-    max-width: 100px;
+    width: 130px;
     text-align: center;
     bottom: -130px;
-    left: 100px;
-    transform: rotate(-20deg);
+    line-height: 100%;
+    left: 55px;
+    transform: rotate(-15deg);
 
     @media (min-width: 1120px) {
       top: -410px;
@@ -356,8 +328,8 @@
     fill: variables.$primary-color;
     width: 200px;
     height: 140px;
-    bottom: -250px;
-    left: 30px;
+    bottom: -265px;
+    left: 40px;
 
     @media (min-width: 1120px) {
       top: -360px;

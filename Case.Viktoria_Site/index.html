@@ -12,11 +12,17 @@
         <use href="/image/symbol-defs.svg#icon-burger_menu"></use>
       </svg>
       <nav class="header__nav">
-        <ul>
-          <li href="#">Для кого курс</li>
-          <li href="#">Про спікера</li>
-          <li href="#">Програма</li>
-          <li href="#">Тарифи</li>
+        <ul class="header__nav-menu">
+          <li class="header__nav-menu-item">
+            <a href="#course-for">Для кого курс</a>
+          </li>
+          <li class="header__nav-menu-item">
+            <a href="#aboutspicer">Про спікера</a>
+          </li>
+          <li class="header__nav-menu-item"><a href="#program">Програма</a></li>
+          <li class="header__nav-menu-item">
+            <a href="#rate-price">Тарифи</a>
+          </li>
         </ul>
       </nav>
       <button type="button" class="header__mobile-button">
@@ -95,10 +101,15 @@
             </div>
           </li>
           <li class="nutr-list__nutr-card">
-            <p class="nutr-list__text">Корисно не вживати молочні продукти?</p>
-            <div>
+            <p class="nutr-list__text">
+              Збалансоване харчування — це постійний підрахунок калорій?
+            </p>
+            <div class="nutr-list__nutr-card--absolute1">
               <svg class="nutr-list__icon4">
                 <use href="/image/symbol-defs.svg#icon-li4"></use>
+              </svg>
+              <svg class="nutr-list__icon4-5">
+                <use href="/image/symbol-defs.svg#icon-spinarrow"></use>
               </svg>
             </div>
           </li>
@@ -116,9 +127,12 @@
             <p class="nutr-list__text">
               Солодкі йогурти — це здорові перекуси?
             </p>
-            <div>
+            <div class="nutr-list__nutr-card--absolute2">
               <svg class="nutr-list__icon6">
                 <use href="/image/symbol-defs.svg#icon-li6"></use>
+              </svg>
+              <svg class="nutr-list__icon6-5">
+                <use href="/image/symbol-defs.svg##icon-arrow1"></use>
               </svg>
             </div>
           </li>
@@ -165,7 +179,7 @@
           </li>
         </ul>
         <article class="course-card">
-          <h2 class="course-card__title">
+          <h2 id="aboutspicer" class="course-card__title">
             Впровадите і створите собі систему харчування, яка буде працювати за
             вас
           </h2>
@@ -196,7 +210,7 @@
             <use href="/image/symbol-defs.svg#icon-redline"></use>
           </svg>
         </article>
-        <h2 class="course-section__bottom-title">
+        <h2 id="course-for" class="course-section__bottom-title">
           Цей курс для вас, якщо хочете:
           <svg class="course-section__title-svg-title">
             <use href="/public/image/symbol-defs.svg#icon-threeline"></use>
@@ -253,13 +267,11 @@
             </p>
           </li>
         </ul>
-        <button class="course-section__button-bottom" type="button">
-          Приєднатись до курсу
-        </button>
+        <button class="btn-primary" type="button">Приєднатись до курсу</button>
       </section>
       <section class="results-section">
         <div class="results-section__container">
-          <h1 class="results-section__title">
+          <h1 id="program" class="results-section__title">
             Головні результати після курсу:
           </h1>
           <ul class="results-section__list">
@@ -309,7 +321,7 @@
       </section>
       <section class="review-section">
         <h2 class="review-section__title">
-          Реальні відгуки про практич- ний курс:
+          Реальні відгуки про практичний курс:
           <p class="review-section__title-text">Що кажуть наші студенти?</p>
           <svg class="review-section__title-svg">
             <use href="/public/image/symbol-defs.svg#icon-arrow1"></use>
@@ -321,14 +333,12 @@
               <svg class="review-section__card--svg">
                 <use href="/public/image/symbol-defs.svg#"></use>
               </svg>
-              <div class="review-section__card--container">
-                <img
-                  class="review-section__card--photo"
-                  src="/public/image/girl-article.jpg"
-                  alt="Девушка поправляет волосы"
-                />
-                <h3 class="review-section__card--title">Катерина Пиліпенко</h3>
-              </div>
+              <img
+                class="review-section__card--photo"
+                src="/public/image/girl-article.jpg"
+                alt="Девушка поправляет волосы"
+              />
+              <h3 class="review-section__card--title">Катерина Пиліпенко</h3>
               <p class="review-section__card--text">
                 Сподобався всесторонній розгляд здоровʼя, перегляд аналізів та
                 добавок, які пʼю. І підказки, які показники потрібно ще
@@ -342,193 +352,280 @@
               </p>
             </article>
           </li>
-          <li class="review-section__list-item2">
-            <article class="review-section__card"></article>
-          </li>
         </ul>
+        <article class="review-section__second-card">
+          <img
+            class="review-section__second-card--photo"
+            src="/public/image/second-man.jpg"
+            alt="Мужчина второй карты"
+          />
+        </article>
         <div class="review-section__img-container">
-          <svg class="review-section__arrow2">
+          <svg class="review-section__arrow review-section__arrow--prev">
             <use href="/public/image/symbol-defs.svg#icon-arrow-slider"></use>
           </svg>
-          <svg class="review-section__arrow1">
+          <svg class="review-section__arrow">
             <use href="/public/image/symbol-defs.svg#icon-arrow-slider"></use>
           </svg>
         </div>
-        <h3 class="review-section__title-bottom">
+        <h3 id="rate-price" class="review-section__title-bottom">
           Оберіть ваш пакет участі
-          <svg>
+          <svg class="review-section__title-bottom--svg">
             <use href="/public/image/symbol-defs.svg#icon-threeline"></use>
           </svg>
         </h3>
-        <article class="review-section__rate-first">
-          <h3>Тариф самостійний</h3>
-          <ul>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
+        <article class="rate-card-first">
+          <h3 class="rate-card-first__title">Тариф самостійний</h3>
+          <ul class="rate-card-first__list">
+            <li class="rate-card-first__item">
+              <div class="rate-card-first__svg-container">
+                <svg class="rate-card-first__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
                 </svg>
-              </div>
-              <p>12 уроків</p>
-            </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
-                </svg>
-              </div>
-              <p>Додаткові файли та рецепти</p>
-            </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
-                </svg>
-              </div>
-              <p>Лайфхаки та рекомендації з впровадження в життя</p>
-            </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
-                </svg>
-              </div>
-              <p>Доступ до уроків на 2 місяці</p>
-            </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
-                </svg>
-              </div>
-              <p>Доступ до загального чату студентів</p>
-            </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
-                </svg>
-              </div>
-              <p>
-                Підтримка та зворотній зв'язок в чаті від хелс-коуча/дієтолога
-              </p>
-            </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
-                </svg>
-              </div>
-              <p>
-                Індивідуальний зворотній зв’язок протягом місяця від хелс-коуча
-              </p>
-            </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
-                </svg>
-                <p>Прості та швидкі рецепти</p>
+                <p class="rate-card-first__description">12 уроків</p>
               </div>
             </li>
-          </ul>
-          <p>69€</p>
-          <button type="button">Навчатись самостійно</button>
-        </article>
-        <p></p>
-        <article class="review-section__rate-second">
-          <h3>З підтримкою дієтолога/хелс-коуча</h3>
-          <ul>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
+            <li class="rate-card-first__item">
+              <div class="rate-card-first__svg-container">
+                <svg class="rate-card-first__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
                 </svg>
+                <p class="rate-card-first__description">
+                  Додаткові файли та рецепти
+                </p>
               </div>
-              <p>12 уроків</p>
             </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
+            <li class="rate-card-first__item">
+              <div class="rate-card-first__svg-container">
+                <svg class="rate-card-first__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
                 </svg>
+                <p class="rate-card-first__description">
+                  Лайфхаки та рекомендації з впровадження в життя
+                </p>
               </div>
-              <p>Додаткові файли та рецепти</p>
             </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
+            <li class="rate-card-first__item">
+              <div class="rate-card-first__svg-container">
+                <svg class="rate-card-first__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
                 </svg>
+                <p class="rate-card-first__description">
+                  Доступ до уроків на 2 місяці
+                </p>
               </div>
-              <p>Лайфхаки та рекомендації з впровадження в життя</p>
             </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
+            <li class="rate-card-first__item">
+              <div class="rate-card-first__svg-container">
+                <svg class="rate-card-first__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
                 </svg>
+                <p class="rate-card-first__description">
+                  Доступ до загального чату студентів
+                </p>
               </div>
-              <p>Доступ до уроків на 2 місяці</p>
             </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
+            <li class="rate-card-first__item">
+              <div class="rate-card-first__svg-container">
+                <svg class="rate-card-first__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
                 </svg>
+                <p class="rate-card-first__description">
+                  Підтримка та зворотній зв'язок в чаті від хелс-коуча/дієтолога
+                </p>
               </div>
-              <p>Доступ до загального чату студентів</p>
             </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
+            <li class="rate-card-first__item">
+              <div class="rate-card-first__svg-container">
+                <svg class="rate-card-first__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
                 </svg>
-              </div>
-              <p>
-                Підтримка та зворотній зв'язок в чаті від хелс-коуча/дієтолога
-              </p>
-            </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
-                </svg>
-                <p>
+                <p class="rate-card-first__description">
                   Індивідуальний зворотній зв’язок протягом місяця від
                   хелс-коуча
                 </p>
               </div>
             </li>
-            <li>
-              <div>
-                <svg class="">
-                  <use href="/image/symbol-defs.svg#icon-CheckCircle"></use>
+            <li class="rate-card-first__item">
+              <div class="rate-card-first__svg-container">
+                <svg class="rate-card-first__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
                 </svg>
-                <p>Прості та швидкі рецепти</p>
+                <p class="rate-card-first__description">
+                  Прості та швидкі рецепти
+                </p>
               </div>
             </li>
           </ul>
-          <p>139€</p>
-          <button type="button">Обираю тариф з підтримкою</button>
+          <p class="rate-card-first__price-description">69€</p>
+          <button class="btn-secondary rate-card-first__btn" type="button">
+            Навчатись самостійно
+          </button>
+        </article>
+        <p class="review-section__between-text">
+          З підтримкою легше та корсиніше!
+          <svg class="review-section__between-text-svg">
+            <use href="/public/image/symbol-defs.svg#icon-short-arrow"></use>
+          </svg>
+        </p>
+        <article class="rate-card-second">
+          <h3 class="rate-card-second__title">
+            З підтримкою дієтолога/хелс-коуча
+          </h3>
+          <ul class="rate-card-second__list">
+            <li class="rate-card-second__item">
+              <div class="rate-card-second__svg-container">
+                <svg class="rate-card-second__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
+                </svg>
+                <p class="rate-card-second__description">12 уроків</p>
+              </div>
+            </li>
+            <li class="rate-card-second__item">
+              <div class="rate-card-second__svg-container">
+                <svg class="rate-card-second__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
+                </svg>
+                <p class="rate-card-second__description">
+                  Додаткові файли та рецепти
+                </p>
+              </div>
+            </li>
+            <li class="rate-card-second__item">
+              <div class="rate-card-second__svg-container">
+                <svg class="rate-card-second__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
+                </svg>
+                <p class="rate-card-second__description">
+                  Лайфхаки та рекомендації з впровадження в життя
+                </p>
+              </div>
+            </li>
+            <li class="rate-card-second__item">
+              <div class="rate-card-second__svg-container">
+                <svg class="rate-card-second__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
+                </svg>
+                <p class="rate-card-second__description">
+                  Доступ до уроків на 2 місяці
+                </p>
+              </div>
+            </li>
+            <li class="rate-card-second__item">
+              <div class="rate-card-second__svg-container">
+                <svg class="rate-card-second__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
+                </svg>
+                <p class="rate-card-second__description">
+                  Доступ до загального чату студентів
+                </p>
+              </div>
+            </li>
+            <li class="rate-card-second__item">
+              <div class="rate-card-second__svg-container">
+                <svg class="rate-card-second__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
+                </svg>
+                <p class="rate-card-second__description">
+                  Підтримка та зворотній зв'язок в чаті від хелс-коуча/дієтолога
+                </p>
+              </div>
+            </li>
+            <li class="rate-card-second__item">
+              <div class="rate-card-second__svg-container">
+                <svg class="rate-card-second__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
+                </svg>
+                <p class="rate-card-second__description">
+                  Індивідуальний зворотній зв’язок протягом місяця від
+                  хелс-коуча
+                </p>
+              </div>
+            </li>
+            <li class="rate-card-second__item">
+              <div class="rate-card-second__svg-container">
+                <svg class="rate-card-second__icon">
+                  <use href="/image/symbol-defs.svg#icon-CheckCircle2"></use>
+                </svg>
+                <p class="rate-card-second__description">
+                  Прості та швидкі рецепти
+                </p>
+              </div>
+            </li>
+          </ul>
+          <p class="rate-card-second__price">139€</p>
+          <button class="btn-secondary rate-card-second__btn" type="button">
+            Обираю тариф з підтримкою
+          </button>
         </article>
       </section>
     </main>
     <footer class="footer">
       <h2 class="footer__title">Eat Right: Що? Скільки? Коли?</h2>
-      <article class="footer__card"></article>
-      <div class="footer-container">
-        <ul class="footer__list">
-          <li class="footer__network"></li>
-          <li class="footer__network"></li>
+      <article class="footer__card">
+        <h2 class="footer__card-text">
+          Якщо у вас виникли будь-які питання, ви можете звернутися у відділ
+          турботи
+          <svg class="footer__card--icon1">
+            <use href="/public/image/symbol-defs.svg#icon-footer-symbol"></use>
+          </svg>
+          <svg class="footer__card--icon2">
+            <use href="/public/image/symbol-defs.svg#icon-footer-arr"></use>
+          </svg>
+        </h2>
+        <button class="btn-secondary footer__card--btn" type="button">
+          Відділ турботи
+        </button>
+      </article>
+      <div class="footer__inner">
+        <!-- Соцсети -->
+        <ul class="footer__socials">
+          <li class="footer__social-item">
+            <a class="footer__social-link" target="_blank" href="#">
+              <svg class="footer__social-icon">
+                <use href="/public/image/symbol-defs.svg#icon-inst-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" target="_blank" href="#">
+              <svg class="footer__social-icon">
+                <use href="/public/image/symbol-defs.svg#icon-tg-logo"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
-        <ul class="footer__list">
-          <li class="footer__link"></li>
-          <li class="footer__link"></li>
+        <!-- Блок текстовых ссылок -->
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" target="_blank" href="#">Оферта</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" target="_blank" href="#"
+              >Політика конфіденційності</a
+            >
+          </li>
         </ul>
-        <ul class="footer__list">
-          <li class="footer__pay"></li>
-          <li class="footer__pay"></li>
+        <!-- Оплата -->
+        <ul class="footer__payments">
+          <li class="footer__payment-item">
+            <a href="#" target="_blank">
+              <img
+                class="footer__visa"
+                src="/public/image/visa-logo.png"
+                alt="Логотип визы"
+              />
+            </a>
+          </li>
+          <li class="footer__payment-item">
+            <a href="#" target="_blank">
+              <img
+                class="footer__mastercard"
+                src="/public/image/visa-ball.png"
+                alt="Логотип мастер кард"
+              />
+            </a>
+          </li>
         </ul>
       </div>
     </footer>

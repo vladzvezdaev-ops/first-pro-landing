@@ -1,0 +1,57 @@
+@use "../utils/variables" as variables;
+
+.btn-primary {
+  display: block;
+  border-radius: 100px;
+  padding: 16px 32px;
+  background-color: variables.$secondary-color;
+  color: variables.$primary-color;
+  font-weight: 600;
+  font-family: variables.$font-secondary;
+  font-size: 14px;
+  margin: 0 auto;
+  max-width: 300px;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    margin-top: 24px;
+    padding: 16px 32px;
+    border-radius: 100px;
+    max-width: 300px;
+    font-weight: 600;
+    background-color: variables.$primary-color;
+    border: 1px solid variables.$secondary-color;
+    color: variables.$secondary-color;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+}
+
+.btn-secondary {
+  border-radius: 100px;
+  padding: 16px 32px;
+  background-color: variables.$primary-color;
+  color: variables.$primary-color-light;
+  font-weight: 600;
+  font-family: variables.$font-secondary;
+  font-size: 14px;
+  margin-top: 24px;
+  max-width: 300px;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    margin-top: 24px;
+    padding: 16px 32px;
+    border-radius: 100px;
+    max-width: 300px;
+    font-weight: 600;
+    color: variables.$secondary-color;
+    border: none;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+}

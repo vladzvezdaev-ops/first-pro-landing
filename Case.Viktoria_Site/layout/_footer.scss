@@ -1,1 +1,171 @@
 @use "../utils/variables" as variables;
+
+.footer {
+  display: grid;
+  position: relative;
+  padding: 35px 15px;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  background-color: variables.$primary-color-light;
+  margin-top: -30px;
+  z-index: 3;
+
+  @media (min-width: 1120px) {
+    padding: 60px 80px;
+  }
+
+  &__title {
+    font-family: variables.$font-secondary;
+    color: variables.$primary-color;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 36px;
+    max-width: 345px;
+
+    @media (min-width: 1120px) {
+      font-size: 60px;
+      max-width: 1280px;
+      white-space: nowrap;
+    }
+  }
+
+  &__card {
+    background-color: variables.$secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    padding: 35px 25px;
+    margin-top: 40px;
+
+    @media (min-width: 1120px) {
+      width: 780px;
+      justify-self: center;
+      padding: 60px;
+      margin-top: 60px;
+    }
+
+    &--icon1 {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      left: -30px;
+      bottom: -70px;
+
+      @media (min-width: 1120px) {
+        top: -40px;
+        left: -60px;
+      }
+    }
+
+    &--icon2 {
+      position: absolute;
+      width: 100px;
+      height: 80px;
+      right: -40px;
+      bottom: -65px;
+
+      @media (min-width: 1120px) {
+        width: 250px;
+        height: 170px;
+        bottom: -145px;
+        right: -85px;
+        transform: rotate(35deg);
+      }
+    }
+
+    &-text {
+      font-family: variables.$font-secondary;
+      color: variables.$primary-color;
+      position: relative;
+      text-align: center;
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 24px;
+      max-width: 300px;
+
+      @media (min-width: 1120px) {
+        max-width: 600px;
+        font-size: 32px;
+      }
+    }
+
+    &--btn {
+      margin-top: 80px;
+
+      @media (min-width: 1120px) {
+        margin-top: 40px;
+
+        &:hover {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+
+  // Иконки и ссылки
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    @media (min-width: 1120px) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  &__social-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  // Ссылки
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &__nav-link {
+    border-bottom: 2px solid variables.$primary-color;
+    font-family: variables.$font-secondary;
+    color: variables.$primary-color;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  // Оплата
+
+  &__payments {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__visa {
+    width: 90px;
+    height: 30px;
+  }
+
+  &__mastercard {
+    width: 50px;
+    height: 30px;
+  }
+}

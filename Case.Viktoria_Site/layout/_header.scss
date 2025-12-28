@@ -59,18 +59,24 @@
       display: flex;
       align-items: center;
 
-      ul {
+      &-menu {
         display: flex;
         gap: 40px;
         list-style: none;
 
-        li {
-          font-family: variables.$font-primary;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 100%;
-          white-space: nowrap;
-          cursor: pointer;
+        &-item {
+          list-style: none;
+
+          a {
+            color: inherit;
+            font-family: variables.$font-primary;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            white-space: nowrap;
+            cursor: pointer;
+          }
         }
       }
     }
