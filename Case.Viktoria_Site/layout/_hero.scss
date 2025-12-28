@@ -1,4 +1,4 @@
-@use "../utils/variables" as variables;
+@use "/utils/variables" as variables;
 
 @media (min-width: 845px) {
   .desktop-section {
@@ -29,8 +29,36 @@
     justify-content: center;
   }
 
+  &__milk {
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: block;
+      position: absolute;
+    }
+  }
+
+  &__milk-svg {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    fill: variables.$secondary-color;
+    top: 230px;
+    left: 60px;
+  }
+
+  &__milk-text {
+    font-family: variables.$font-tertiary;
+    color: variables.$secondary-color;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    font-weight: 700;
+    transform: rotate(-25deg);
+  }
+
   &__brokoli {
-    content: "";
     position: absolute;
     width: 65px;
     height: 80px;
@@ -48,7 +76,6 @@
   }
 
   &__avocado {
-    content: "";
     position: absolute;
     width: 70px;
     height: 80px;
@@ -66,7 +93,6 @@
   }
 
   &__brokoli-down {
-    content: "";
     position: absolute;
     width: 70px;
     height: 80px;
@@ -87,7 +113,6 @@
   }
 
   &__wok {
-    content: "";
     position: absolute;
     width: 100px;
     height: 100px;
@@ -107,48 +132,17 @@
     }
   }
 
-  p {
-    max-width: 345px;
-  }
+  &__wok-text {
+    font-family: variables.$font-tertiary;
+    color: variables.$secondary-color;
+    display: none;
 
-  &__button {
-    margin-top: 40px;
-    margin-bottom: 16px;
-    padding: 16px 32px;
-    border-radius: 100px;
-    width: 265px;
-    height: 46px;
-    background-color: variables.$secondary-color;
-    color: variables.$primary-color;
-    border: none;
-    white-space: nowrap;
-    cursor: pointer;
-
-    @media (min-width: 1120px) {
-      margin-top: 60px;
-      order: 2;
-    }
-
-    &:hover {
-      margin-top: 40px;
-      margin-bottom: 16px;
-      padding: 13px 32px 19px 32px;
-      border-radius: 100px;
-      width: 265px;
-      height: 46px;
-      background-color: transparent;
-      color: variables.$secondary-color;
-      border: 3px solid variables.$secondary-color;
-      white-space: nowrap;
-      cursor: pointer;
-    }
-
-    p {
-      font-family: variables.$font-secondary;
-      height: 14px;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 100%;
+    @media (min-width: 1350px) {
+      display: block;
+      position: absolute;
+      top: 45px;
+      right: 40px;
+      transform: rotate(15deg);
     }
   }
 
@@ -157,6 +151,11 @@
     font-weight: 500;
     font-size: 24px;
     font-family: variables.$font-primary;
+  }
+
+  &__button {
+    margin-left: 0;
+    margin-top: 40px;
   }
 
   &__span:last-of-type {
@@ -208,47 +207,5 @@
       font-size: 52px;
       max-width: 530px;
     }
-  }
-}
-
-.wok-text {
-  font-family: variables.$font-tertiary;
-  color: variables.$secondary-color;
-  display: none;
-
-  @media (min-width: 1350px) {
-    display: block;
-    position: absolute;
-    top: 45px;
-    right: 40px;
-    transform: rotate(15deg);
-  }
-}
-
-.milk {
-  display: none;
-
-  @media (min-width: 1200px) {
-    display: block;
-    position: absolute;
-  }
-  &__svg {
-    display: block;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    fill: variables.$secondary-color;
-    top: 230px;
-    left: 60px;
-  }
-
-  &__text {
-    font-family: variables.$font-tertiary;
-    color: variables.$secondary-color;
-    position: absolute;
-    top: 200px;
-    left: 0;
-    font-weight: 700;
-    transform: rotate(-25deg);
   }
 }

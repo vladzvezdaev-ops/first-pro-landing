@@ -8,25 +8,31 @@
   </head>
   <body>
     <header class="header">
-      <svg class="header__burger-menu">
-        <use href="/image/symbol-defs.svg#icon-burger_menu"></use>
-      </svg>
+      <button
+        class="header__burger"
+        type="button"
+        aria-label="Відкрити навігаційне меню"
+      >
+        <svg class="header__burger-icon">
+          <use href="/image/symbol-defs.svg#icon-burger_menu"></use>
+        </svg>
+      </button>
       <nav class="header__nav">
-        <ul class="header__nav-menu">
-          <li class="header__nav-menu-item">
+        <ul class="header__menu">
+          <li class="header__menu-item">
             <a href="#course-for">Для кого курс</a>
           </li>
-          <li class="header__nav-menu-item">
+          <li class="header__menu-item">
             <a href="#aboutspicer">Про спікера</a>
           </li>
-          <li class="header__nav-menu-item"><a href="#program">Програма</a></li>
-          <li class="header__nav-menu-item">
+          <li class="header__menu-item"><a href="#program">Програма</a></li>
+          <li class="header__menu-item">
             <a href="#rate-price">Тарифи</a>
           </li>
         </ul>
       </nav>
       <button type="button" class="header__mobile-button">
-        <p>Записатись на курс</p>
+        Записатись на курс
       </button>
     </header>
     <main>
@@ -47,8 +53,8 @@
             Отримайте науково-перевірену інформацію <br />
             щодо збалансованого харчування:
           </p>
-          <button type="button" class="hero__button">
-            <p>Приєднатись до курсу</p>
+          <button type="button" class="hero__button btn-primary">
+            Приєднатись до курсу
           </button>
           <br />
           <span class="hero__span">Практичний онлайн-курс</span>
@@ -57,14 +63,14 @@
             <use href="./image/symbol-defs.svg#icon-brokoli"></use>
           </svg>
           <div>
-            <p class="wok-text">Що можна їсти, а що ні? </p>
+            <p class="hero__wok-text">Що можна їсти, а що ні? </p>
             <svg class="hero__wok">
               <use href="./image/symbol-defs.svg#icon-wok"></use>
             </svg>
           </div>
-          <div class="milk">
-            <p class="milk__text">Де брати необхідні продукти?</p>
-            <svg class="milk__svg">
+          <div class="hero__milk">
+            <p class="hero__milk-text">Де брати необхідні продукти?</p>
+            <svg class="hero__milk-svg">
               <use href="/image/symbol-defs.svg#icon-milk"></use>
             </svg>
           </div>
@@ -132,7 +138,7 @@
                 <use href="/image/symbol-defs.svg#icon-li6"></use>
               </svg>
               <svg class="nutr-list__icon6-5">
-                <use href="/image/symbol-defs.svg##icon-arrow1"></use>
+                <use href="/image/symbol-defs.svg#icon-arrow1"></use>
               </svg>
             </div>
           </li>
