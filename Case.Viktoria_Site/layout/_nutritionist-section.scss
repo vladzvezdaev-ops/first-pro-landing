@@ -4,13 +4,11 @@
   position: relative;
   background-color: variables.$primary-color-light;
   border-radius: 32px;
-  height: 1400px;
   margin-top: -75px;
   padding: 35px 15px;
   z-index: 2;
 
   @media (min-width: 1025px) {
-    height: 1050px;
     padding: 60px 80px;
   }
 
@@ -18,12 +16,10 @@
     max-width: 290px;
     font-size: 36px;
     font-weight: 400;
-    line-height: 100%;
-    font-style: normal;
+    line-height: 1;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     color: variables.$primary-color;
-    margin-bottom: 40px;
     font-family: variables.$font-secondary;
 
     @media (min-width: 1024px) {
@@ -32,56 +28,53 @@
     }
   }
 
+  &__footer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+      margin-top: 60px;
+    }
+  }
+
   &__bottom-text {
     color: variables.$primary-color;
     font-family: variables.$font-primary;
     font-weight: 500;
     font-size: 20px;
-    padding-top: 40px;
     margin: 0 auto;
     text-align: center;
     max-width: 360px;
 
+    &--accent {
+      color: variables.$secondary-color-green;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      max-width: 300px;
+    }
+
     @media (min-width: 1024px) {
-      text-align: center;
-      justify-content: center;
-      margin: 0 auto;
       font-size: 32px;
       max-width: 780px;
-      padding-top: 60px;
-    }
-  }
 
-  &__bottom-text-span {
-    color: variables.$secondary-color-green;
-    font-family: variables.$font-primary;
-    font-weight: 500;
-    font-size: 20px;
-    padding-top: 30px;
-    margin-bottom: 20px;
-    max-width: 300px;
-    margin: 0 auto;
-    text-align: center;
-
-    @media (min-width: 1024px) {
-      text-align: center;
-      font-size: 32px;
-      max-width: 500px;
-      margin: 0 auto;
-      padding-top: 30px;
+      &--accent {
+        max-width: 500px;
+      }
     }
   }
 
   &__line {
     display: block;
     margin: 0 auto;
-    height: 50px;
     width: 310px;
+    height: 50px;
+
     @media (min-width: 1024px) {
       width: 410px;
       height: 70px;
-      margin: 0 auto;
-      padding-top: 10px;
+      margin-top: 10px;
     }
   }
 }
@@ -90,31 +83,25 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 0;
+  list-style: none;
 
   @media (min-width: 1024px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
-  &__nutr-card {
+  &__card {
     background-color: variables.$secondary-color-green;
     border-radius: 16px;
-    padding: 32px;
-    min-height: 100px;
-    min-width: 345px;
+    padding: 24px 32px;
+    min-height: 120px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &--absolute1 {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-    }
-
-    &--absolute2 {
-      position: relative;
-    }
+    box-sizing: border-box;
   }
 
   &__text {
@@ -122,66 +109,87 @@
     font-family: variables.$font-primary;
     font-weight: 500;
     font-size: 18px;
-    line-height: 100%;
-    max-width: 135px;
-    text-align: flex-start;
+    line-height: 1.2;
+    max-width: 160px;
+    text-align: left; 
   }
 
-  &__icon1 {
-    margin-right: 20px;
-    width: 110px;
-    height: 60px;
-  }
 
-  &__icon2 {
-    margin-right: 20px;
-    width: 90px;
-    height: 70px;
-  }
-
-  &__icon3 {
-    margin-right: 20px;
-    width: 90px;
-    height: 90px;
-  }
-
-  &__icon4 {
+  &__icon-box {
+    display: flex;
     align-items: center;
-    position: absolute;
-    bottom: -40px;
-    height: 120px;
-    width: 170px;
-    left: -45px;
-  }
-
-  &__icon4-5 {
-    align-items: center;
+    justify-content: center;
     position: relative;
-    width: 140px;
-    height: 40px;
-    left: -40px;
-    top: 35px;
+
+
+    &--complex-calories {
+      height: 120px;
+      width: 100px;
+    }
+
+    &--complex-yogurt {
+      height: 90px;
+      width: 160px;
+    }
   }
 
-  &__icon5 {
-    margin-right: 20px;
-    width: 120px;
-    height: 80px;
-  }
 
-  &__icon6 {
-    margin-right: 20px;
-    width: 160px;
-    height: 90px;
-  }
+  &__icon {
+    &--soup {
+      width: 110px;
+      height: 60px;
+      margin-right: 20px;
+    }
 
-  &__icon6-5 {
-    color: variables.$secondary-color;
-    transform: scaleY(-1) rotate(50deg);
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    left: 0;
-    top: 30px;
+    &--limits {
+      width: 90px;
+      height: 70px;
+      margin-right: 20px;
+    }
+
+    &--milk {
+      width: 90px;
+      height: 90px;
+      margin-right: 20px;
+    }
+
+    &--keto {
+      width: 120px;
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    &--apple {
+      position: absolute;
+      width: 170px;
+      height: 120px;
+      bottom: -15px;
+      right: -20px;
+    }
+
+    &--spin {
+      position: absolute;
+      width: 140px;
+      height: 40px;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--yogurt {
+      width: 160px;
+      height: 90px;
+      margin-right: 20px;
+    }
+
+    &--arrow {
+      color: variables.$secondary-color;
+      transform: scaleY(-1) rotate(50deg);
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      left: 0;
+      top: 20px;
+    }
   }
 }
