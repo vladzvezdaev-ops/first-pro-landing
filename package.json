@@ -1,18 +1,22 @@
 {
-  "name": "case-viktoria-site",
+  "name": "first-pro-landing",
   "version": "1.0.0",
+  "homepage": "vladzvezdaev-ops.github.io",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "sass-embedded": "^1.97.1",
-    "vite": "^7.3.0"
+    "vite": "^6.0.0"
   }
 }
